@@ -20,7 +20,7 @@ import torch.utils.cpp_extension
 # ----------------------------------------------------------------------------
 # Global options.
 
-verbosity = "brief"  # Verbosity level: 'none', 'brief', 'full'
+verbosity = "none"  # Verbosity level: 'none', 'brief', 'full'
 
 # ----------------------------------------------------------------------------
 # Internal helper funcs.

@@ -6,14 +6,13 @@
 
 import copy
 
+import torch
 from torch.nn import DataParallel
 from torch.nn.parallel import DistributedDataParallel as DDP
-import torch
 
-from sync_batchnorm.batchnorm import convert_model
-from utils.ema import Ema
-from utils.ema import EmaStylegan2
-import utils.misc as misc
+from ..sync_batchnorm.batchnorm import convert_model
+from ..utils import misc
+from ..utils.ema import Ema, EmaStylegan2
 
 
 def load_generator_discriminator(DATA, OPTIMIZATION, MODEL, STYLEGAN2, MODULES, RUN, device, logger):

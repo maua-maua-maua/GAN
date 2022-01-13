@@ -10,15 +10,12 @@ distribution of this software and related documentation without an express
 license agreement from NVIDIA CORPORATION is strictly prohibited.
 """
 
+import numpy as np
 import torch
 import torch.nn.functional as F
-import numpy as np
 
-import utils.style_misc as misc
-from utils.style_ops import conv2d_resample
-from utils.style_ops import upfirdn2d
-from utils.style_ops import bias_act
-from utils.style_ops import fma
+from ..utils import style_misc as misc
+from ..utils.style_ops import bias_act, conv2d_resample, fma, upfirdn2d
 
 
 def normalize_2nd_moment(x, dim=1, eps=1e-8):

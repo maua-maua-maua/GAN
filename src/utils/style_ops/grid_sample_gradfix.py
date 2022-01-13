@@ -19,7 +19,7 @@ import torch
 
 #----------------------------------------------------------------------------
 
-enabled = False  # Enable the custom op by setting this to true.
+enabled = True  # Enable the custom op by setting this to true.
 
 #----------------------------------------------------------------------------
 
